@@ -1,6 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/rg'
-require_relative '../customer.rb'
+require_relative '../models/customer.rb'
 
 
 class CustomerTest < MiniTest::Test
@@ -12,7 +12,11 @@ class CustomerTest < MiniTest::Test
   end
 
   def test_customer_has_name();
-    assert_equal("Rana", @Customer1.name)
+    assert_equal("Rana", @customer1.name)
   end
 
+  def test_csutomer_has_age();
+    assert_equal(28, @customer2.age);
+  end
+  
 end
