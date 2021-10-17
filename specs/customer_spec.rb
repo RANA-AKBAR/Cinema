@@ -15,8 +15,10 @@ class CustomerTest < MiniTest::Test
     assert_equal("Rana", @customer1.name)
   end
 
-  def test_csutomer_has_age();
+  def test_customer_has_age();
     assert_equal(28, @customer2.age);
   end
-  
+
+
+
 end
