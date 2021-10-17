@@ -7,3 +7,11 @@ CREATE TABLE films (
   title VARCHAR(255),
   price NUMERIC
 );
+
+
+CREATE TABLE customers (
+  id SERIAL8 PRIMARY KEY,
+  name VARCHAR(255),
+  age NUMERIC,
+  funds NUMERIC
+);
